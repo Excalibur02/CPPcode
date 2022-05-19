@@ -1,32 +1,17 @@
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main(){
-    int t;
-    cin>>t;
-    while(t--){
-        int n,x,y;
-        cin>>n>>x>>y;
-        int A[n];
-        int B[n];
-        for(int i=0;i<n;i++){
-            cin>>A[i];
-        }
-        for(int i=0;i<n;i++){
-            cin>>B[i];
-        }
-        for(int i=0;i<n;i++){
-            if(A[i]=B[i]-x ){
-                cout<<"Yes"<<endl;
-                continue;
+int main ()
+{
+    int row,col;
+    cin>>row>>col;
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=col;j++){
+            if(i==1 || i==row){
+                cout<<"*";
             }
-            if(A[i]=B[i]-y ){
-                cout<<"Yes"<<endl;
-                continue;
-            }
-            else{cout<<"No"<<endl;
-            continue;}
-        }
-        
+            else if(j==col || j==1){
+                cout<<"*";            }
+                else{ cout<<" ";}
+        } cout<<"\n";
     }
-    return 0;
 }

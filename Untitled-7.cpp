@@ -4,10 +4,12 @@ int main ()
 {
     int n;
     cin>>n;
-
-    for(int i=n;i>=1;i--){
+    int a=1;
+    for(int i=1;i<=n;i++){
         for(int j=1;j<=i;j++){
-            cout<<"*";
-        }cout<<"\n";
+            cout<<a<<" ";
+            a++;
+        }cout<<endl;
     }
+
 }
